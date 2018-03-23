@@ -1,0 +1,29 @@
+{
+	"groups": [],
+	"properties": [
+		{
+			"name": "embedded.container.mongodb.enabled",
+			"type": "java.lang.Boolean",
+			"description": "Enables/Disables container startup.",
+			"defaultValue": "true"
+		},
+		{
+			"name": "embedded.container.mongodb.startup-timeout",
+			"description": "Max time to wait for a successfully started container",
+			"type": "java.lang.Integer",
+			"defaultValue": "30"
+		},
+		{
+			"name": "embedded.container.mongodb.docker-image",
+			"type": "java.lang.String",
+			"description": "Docker-image",
+			"defaultValue": "mongo:3.4.13"
+		},
+		{
+			"name": "embedded.container.mongodb.port",
+			"description": "Port",
+			"type": "java.lang.Integer",
+			"defaultValue": "27017"
+		}
+	]
+}
