@@ -1,8 +1,8 @@
 springboot-testcontainer-mongodb
 ================================
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.testcontainer/springboot-testcontainer-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.testcontainer/springboot-testcontainer-mongodb)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/xxx)](https://www.codacy.com/app/springboot-testcontainer/springboot-testcontainer-mongodb)
+[![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/testcontainer/springboot-testcontainer-mongodb/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.testcontainer%22%20AND%20a%3A%22springboot-testcontainer-mongodb%22)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e0661e8bfe04eb28e66015aa0611483)](https://www.codacy.com/app/avides-builds/springboot-testcontainer-mongodb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=springboot-testcontainer/springboot-testcontainer-mongodb&amp;utm_campaign=Badge_Grade)
 [![Coverage Status](https://coveralls.io/repos/springboot-testcontainer/springboot-testcontainer-mongodb/badge.svg)](https://coveralls.io/r/springboot-testcontainer/springboot-testcontainer-mongodb)
 [![Build Status](https://travis-ci.org/springboot-testcontainer/springboot-testcontainer-mongodb.svg?branch=master)](https://travis-ci.org/springboot-testcontainer/springboot-testcontainer-mongodb)
 
