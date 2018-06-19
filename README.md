@@ -11,7 +11,7 @@ springboot-testcontainer-mongodb
 <dependency>
 	<groupId>com.avides.springboot.testcontainer</groupId>
 	<artifactId>springboot-testcontainer-mongodb</artifactId>
-	<version>0.1.0-RC4</version>
+	<version>0.1.0-RC5</version>
 	<scope>test</scope>
 </dependency>
 ```
@@ -20,7 +20,7 @@ springboot-testcontainer-mongodb
 Properties consumed (in `bootstrap.properties`):
 - `embedded.container.mongodb.enabled` (default is `true`)
 - `embedded.container.mongodb.startup-timeout` (default is `30`)
-- `embedded.container.mongodb.docker-image` (default is `mongo:3.4.13`)
+- `embedded.container.mongodb.docker-image` (default is `mongo:3.4.15`)
 - `embedded.container.mongodb.port` (default is `27017`)
 
 Properties provided (in `application-it.properties`):

@@ -1,9 +1,9 @@
 package com.avides.springboot.testcontainer.mongodb;
 
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
 
 public class MongodbPropertiesTest
 {
@@ -13,7 +13,7 @@ public class MongodbPropertiesTest
         MongodbProperties properties = new MongodbProperties();
         assertTrue(properties.isEnabled());
         assertEquals(30, properties.getStartupTimeout());
-        assertEquals("mongo:3.4.13", properties.getDockerImage());
+        assertEquals("mongo:3.4.15", properties.getDockerImage());
 
         assertEquals(27017, properties.getPort());
     }
