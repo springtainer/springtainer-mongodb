@@ -13,7 +13,7 @@ public class MongodbPropertiesTest
         MongodbProperties properties = new MongodbProperties();
         assertTrue(properties.isEnabled());
         assertEquals(30, properties.getStartupTimeout());
-        assertEquals("mongo:3.4.15", properties.getDockerImage());
+        assertEquals("mongo:3.4.18", properties.getDockerImage());
 
         assertEquals(27017, properties.getPort());
     }
