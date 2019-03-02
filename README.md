@@ -11,7 +11,7 @@ springboot-testcontainer-mongodb
 <dependency>
 	<groupId>com.avides.springboot.testcontainer</groupId>
 	<artifactId>springboot-testcontainer-mongodb</artifactId>
-	<version>0.1.0-RC9</version>
+	<version>0.1.0-RC10</version>
 	<scope>test</scope>
 </dependency>
 ```
