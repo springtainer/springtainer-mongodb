@@ -1,17 +1,18 @@
-springboot-testcontainer-mongodb
-================================
+# springboot-testcontainer-mongodb
 
 [![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/testcontainer/springboot-testcontainer-mongodb/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.testcontainer%22%20AND%20a%3A%22springboot-testcontainer-mongodb%22)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e0661e8bfe04eb28e66015aa0611483)](https://www.codacy.com/app/avides-builds/springboot-testcontainer-mongodb)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/5e0661e8bfe04eb28e66015aa0611483)](https://www.codacy.com/app/avides-builds/springboot-testcontainer-mongodb)
-[![Build Status](https://travis-ci.org/springboot-testcontainer/springboot-testcontainer-mongodb.svg?branch=master)](https://travis-ci.org/springboot-testcontainer/springboot-testcontainer-mongodb)
+[![Build](https://github.com/springboot-testcontainer/springboot-testcontainer-mongodb/workflows/release/badge.svg)](https://github.com/springboot-testcontainer/springboot-testcontainer-mongodb/actions)
+[![Nightly build](https://github.com/springboot-testcontainer/springboot-testcontainer-mongodb/workflows/nightly/badge.svg)](https://github.com/springboot-testcontainer/springboot-testcontainer-mongodb/actions)
+[![Coverage report](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-mongodb&metric=coverage)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-mongodb)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-mongodb&metric=alert_status)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-mongodb)
+[![Technical dept](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-mongodb&metric=sqale_index)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-mongodb)
 
 ### Dependency
 ```xml
 <dependency>
 	<groupId>com.avides.springboot.testcontainer</groupId>
 	<artifactId>springboot-testcontainer-mongodb</artifactId>
-	<version>0.1.0-RC10</version>
+	<version>1.0.0-RC1</version>
 	<scope>test</scope>
 </dependency>
 ```
@@ -20,7 +21,7 @@ springboot-testcontainer-mongodb
 Properties consumed (in `bootstrap.properties`):
 - `embedded.container.mongodb.enabled` (default is `true`)
 - `embedded.container.mongodb.startup-timeout` (default is `30`)
-- `embedded.container.mongodb.docker-image` (default is `mongo:3.4.18`)
+- `embedded.container.mongodb.docker-image` (default is `mongo:4.0.13`)
 - `embedded.container.mongodb.port` (default is `27017`)
 
 Properties provided (in `application-it.properties`):
