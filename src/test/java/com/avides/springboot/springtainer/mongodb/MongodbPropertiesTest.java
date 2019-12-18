@@ -1,4 +1,4 @@
-package com.avides.springboot.testcontainer.mongodb;
+package com.avides.springboot.springtainer.mongodb;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
