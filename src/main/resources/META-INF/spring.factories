@@ -1,2 +1,2 @@
 org.springframework.cloud.bootstrap.BootstrapConfiguration=\
-com.avides.springboot.testcontainer.mongodb.EmbeddedMongodbContainerAutoConfiguration
+com.avides.springboot.springtainer.mongodb.EmbeddedMongodbContainerAutoConfiguration

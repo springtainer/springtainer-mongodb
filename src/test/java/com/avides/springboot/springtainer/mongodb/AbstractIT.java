@@ -1,4 +1,4 @@
-package com.avides.springboot.testcontainer.mongodb;
+package com.avides.springboot.springtainer.mongodb;
 
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

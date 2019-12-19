@@ -1,6 +1,6 @@
-package com.avides.springboot.testcontainer.mongodb;
+package com.avides.springboot.springtainer.mongodb;
 
-import static com.avides.springboot.testcontainer.mongodb.MongodbProperties.BEAN_NAME;
+import static com.avides.springboot.springtainer.mongodb.MongodbProperties.BEAN_NAME;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,8 +14,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.env.ConfigurableEnvironment;
 
-import com.avides.springboot.testcontainer.common.container.AbstractBuildingEmbeddedContainer;
-import com.avides.springboot.testcontainer.common.container.EmbeddedContainer;
+import com.avides.springboot.springtainer.common.container.AbstractBuildingEmbeddedContainer;
+import com.avides.springboot.springtainer.common.container.EmbeddedContainer;
 import com.mongodb.MongoClient;
 import com.mongodb.ServerAddress;
 

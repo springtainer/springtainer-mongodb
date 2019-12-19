@@ -1,14 +1,13 @@
-package com.avides.springboot.testcontainer.mongodb;
+package com.avides.springboot.springtainer.mongodb;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 import org.junit.Test;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.annotation.Id;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
