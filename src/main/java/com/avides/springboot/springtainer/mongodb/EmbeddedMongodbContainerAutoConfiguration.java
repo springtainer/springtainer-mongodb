@@ -16,8 +16,8 @@ import org.springframework.core.env.ConfigurableEnvironment;
 
 import com.avides.springboot.springtainer.common.container.AbstractBuildingEmbeddedContainer;
 import com.avides.springboot.springtainer.common.container.EmbeddedContainer;
-import com.mongodb.MongoClient;
-import com.mongodb.ServerAddress;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
 
 @Configuration
 @ConditionalOnProperty(name = "embedded.container.mongodb.enabled", matchIfMissing = true)
@@ -32,7 +32,7 @@ public class EmbeddedMongodbContainerAutoConfiguration
         return new MongodbContainer("mongodb", environment, properties);
     }
 
-    public class MongodbContainer extends AbstractBuildingEmbeddedContainer<MongodbProperties>
+    public static class MongodbContainer extends AbstractBuildingEmbeddedContainer<MongodbProperties>
     {
         public MongodbContainer(String service, ConfigurableEnvironment environment, MongodbProperties properties)
         {
@@ -51,7 +51,7 @@ public class EmbeddedMongodbContainerAutoConfiguration
         @Override
         protected boolean isContainerReady(MongodbProperties properties)
         {
-            try (MongoClient mongoClient = new MongoClient(new ServerAddress(getContainerHost(), getContainerPort(properties.getPort()))))
+            try (MongoClient mongoClient = MongoClients.create("mongodb://" + getContainerHost() + ":" + getContainerPort(properties.getPort())))
             {
                 return mongoClient.getDatabase("admin") != null;
             }
