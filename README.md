@@ -1,6 +1,6 @@
 # springtainer-mongodb
 
-[![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/springtainer/springtainer-mongodb/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.springtainer%22%20AND%20a%3A%22springtainer-mongodb%22)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-mongodb)
 [![Build](https://github.com/springtainer/springtainer-mongodb/workflows/release/badge.svg)](https://github.com/springtainer/springtainer-mongodb/actions)
 [![Nightly build](https://github.com/springtainer/springtainer-mongodb/workflows/nightly/badge.svg)](https://github.com/springtainer/springtainer-mongodb/actions)
 [![Coverage report](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-mongodb&metric=coverage)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-mongodb)
@@ -12,7 +12,7 @@
 <dependency>
 	<groupId>com.avides.springboot.springtainer</groupId>
 	<artifactId>springtainer-mongodb</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<scope>test</scope>
 </dependency>
 ```
@@ -21,7 +21,7 @@
 Properties consumed (in `bootstrap.properties`):
 - `embedded.container.mongodb.enabled` (default is `true`)
 - `embedded.container.mongodb.startup-timeout` (default is `30`)
-- `embedded.container.mongodb.docker-image` (default is `mongo:4.0.13`)
+- `embedded.container.mongodb.docker-image` (default is `mongo:4.0.18`)
 - `embedded.container.mongodb.port` (default is `27017`)
 
 Properties provided (in `application-it.properties`):
