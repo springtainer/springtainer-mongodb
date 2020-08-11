@@ -3,7 +3,7 @@
 
   <groupId>com.avides.springboot.springtainer</groupId>
   <artifactId>springtainer-mongodb</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
 
   <name>springtainer-mongodb</name>
   <description>MongoDB test-container</description>
@@ -55,7 +55,7 @@
     <spring.version>5.2.7.RELEASE</spring.version>
     <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
     <!-- Other -->
-    <springtainer-common.version>1.1.2</springtainer-common.version>
+    <springtainer-common.version>1.2.0</springtainer-common.version>
     <lombok.version>1.18.12</lombok.version>
     <spring-data-mongodb.version>3.0.1.RELEASE</spring-data-mongodb.version>
     <mongo-java-driver.version>3.12.5</mongo-java-driver.version>
