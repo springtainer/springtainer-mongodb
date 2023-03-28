@@ -14,7 +14,7 @@
 <dependency>
   <groupId>com.avides.springboot.springtainer</groupId>
   <artifactId>springtainer-mongodb</artifactId>
-  <version>1.3.0</version>
+  <version>1.4.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -25,7 +25,7 @@ Properties consumed (in `bootstrap.properties`):
 
 - `embedded.container.mongodb.enabled` (default is `true`)
 - `embedded.container.mongodb.startup-timeout` (default is `30`)
-- `embedded.container.mongodb.docker-image` (default is `mongo:4.0.28`)
+- `embedded.container.mongodb.docker-image` (default is `mongo:4.2.24`)
 - `embedded.container.mongodb.port` (default is `27017`)
 
 Properties provided (in `application-it.properties`):
