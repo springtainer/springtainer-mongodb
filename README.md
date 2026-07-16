@@ -1,11 +1,10 @@
 # springtainer-mongodb
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-mongodb)
-[![Build](https://github.com/springtainer/springtainer-mongodb/workflows/release/badge.svg)](https://github.com/springtainer/springtainer-mongodb/actions)
-[![Nightly build](https://github.com/springtainer/springtainer-mongodb/workflows/nightly/badge.svg)](https://github.com/springtainer/springtainer-mongodb/actions)
-[![Coverage report](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-mongodb&metric=coverage)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-mongodb)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-mongodb&metric=alert_status)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-mongodb)
-[![Technical dept](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-mongodb&metric=sqale_index)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-mongodb)
+[![Maven Central](https://img.shields.io/maven-central/v/com.avides.springboot.springtainer/springtainer-mongodb.svg?label=maven-central)](https://search.maven.org/artifact/com.avides.springboot.springtainer/springtainer-mongodb)
+[![Release](https://github.com/springtainer/springtainer-mongodb/actions/workflows/release.yml/badge.svg)](https://github.com/springtainer/springtainer-mongodb/actions/workflows/release.yml)
+[![Nightly build](https://github.com/springtainer/springtainer-mongodb/actions/workflows/nightly.yml/badge.svg)](https://github.com/springtainer/springtainer-mongodb/actions/workflows/nightly.yml)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-mongodb&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=springtainer_springtainer-mongodb)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-mongodb&metric=coverage)](https://sonarcloud.io/summary/new_code?id=springtainer_springtainer-mongodb)
 
 ### Dependency
 
