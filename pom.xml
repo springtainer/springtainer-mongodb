@@ -300,7 +300,7 @@
             </goals>
           </execution>
           <execution>
-            <id>post-merge-report</id>
+            <id>report</id>
             <phase>verify</phase>
             <goals>
               <goal>report</goal>
