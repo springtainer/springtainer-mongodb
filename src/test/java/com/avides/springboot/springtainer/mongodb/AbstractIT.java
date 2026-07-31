@@ -12,7 +12,7 @@ import com.avides.springboot.springtainer.common.util.DockerClients;
 import com.github.dockerjava.api.DockerClient;
 
 @ExtendWith(SpringExtension.class)
-@SpringBootTest(properties = { "spring.data.mongodb.uri=mongodb://${embedded.container.mongodb.host}:${embedded.container.mongodb.port}/test" })
+@SpringBootTest(properties = { "spring.mongodb.uri=mongodb://${embedded.container.mongodb.host}:${embedded.container.mongodb.port}/test" })
 @DirtiesContext
 public abstract class AbstractIT
 {
