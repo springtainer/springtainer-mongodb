@@ -4,6 +4,7 @@ import static com.avides.springboot.springtainer.mongodb.MongodbProperties.BEAN_
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -16,6 +17,10 @@ import org.springframework.core.env.ConfigurableEnvironment;
 
 import com.avides.springboot.springtainer.common.container.AbstractBuildingEmbeddedContainer;
 import com.avides.springboot.springtainer.common.container.EmbeddedContainer;
+import org.bson.Document;
+
+import com.mongodb.ConnectionString;
+import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 
@@ -48,12 +53,22 @@ public class EmbeddedMongodbContainerAutoConfiguration
             return provided;
         }
 
+        /**
+         * Sends a ping, because everything up to and including {@code getDatabase} is resolved client-side and would report a container ready that never
+         * came up. The server selection timeout is kept well below the startup timeout so a failed attempt leaves room to retry.
+         */
         @Override
         protected boolean isContainerReady(MongodbProperties properties)
         {
-            try (MongoClient mongoClient = MongoClients.create("mongodb://" + getContainerHost() + ":" + getContainerPort(properties.getPort())))
+            MongoClientSettings settings = MongoClientSettings.builder()
+                    .applyConnectionString(new ConnectionString("mongodb://" + getContainerHost() + ":" + getContainerPort(properties.getPort())))
+                    .applyToClusterSettings(builder -> builder.serverSelectionTimeout(2, TimeUnit.SECONDS))
+                    .build();
+
+            try (MongoClient mongoClient = MongoClients.create(settings))
             {
-                return mongoClient.getDatabase("admin") != null;
+                mongoClient.getDatabase("admin").runCommand(new Document("ping", Integer.valueOf(1)));
+                return true;
             }
         }
     }

@@ -20,6 +20,6 @@ public class MongodbProperties extends AbstractEmbeddedContainerProperties
 
     public MongodbProperties()
     {
-        setDockerImage("mongo:4.2.24");
+        setDockerImage("mongo:8.2.12");
     }
 }
