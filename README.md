@@ -12,7 +12,7 @@
 <dependency>
   <groupId>com.avides.springboot.springtainer</groupId>
   <artifactId>springtainer-mongodb</artifactId>
-  <version>2.0.0</version>
+  <version>3.0.0-RC1</version>
   <scope>test</scope>
 </dependency>
 ```
